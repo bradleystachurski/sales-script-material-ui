@@ -5,6 +5,7 @@ import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
 import RaisedButton from 'material-ui/RaisedButton'
 import { List, ListItem } from 'material-ui/List'
+import MainScriptList from './components/MainScriptList'
 
 class App extends Component {
 
@@ -37,24 +38,7 @@ class App extends Component {
           <MenuItem primaryText="about" containerElement={<Link to="/about" />} />
         </Drawer>
 
-        <div style={{ textAlign: 'center' }}>
-          {this.props.children}
-
-          <RaisedButton
-            label="Toggle Drawer"
-            onTouchTap={this.toggleDrawer}
-          />
-        </div>
-
-        <div style={{ textAlign: 'center' }}>
-          <List>
-            <ListItem
-              primaryText="Getting Past the Gatekeeper"
-              containerElement={<Link to="/gatekeeper" />}
-            >
-            </ListItem>
-          </List>
-        </div>
+        <MainScriptList />
 
       </div>
     )
