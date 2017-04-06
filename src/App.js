@@ -4,6 +4,7 @@ import AppBar from 'material-ui/AppBar'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
 import RaisedButton from 'material-ui/RaisedButton'
+import { List, ListItem } from 'material-ui/List'
 
 class App extends Component {
 
@@ -43,6 +44,16 @@ class App extends Component {
             label="Toggle Drawer"
             onTouchTap={this.toggleDrawer}
           />
+        </div>
+
+        <div style={{ textAlign: 'center' }}>
+          <List>
+            <ListItem
+              primaryText="Getting Past the Gatekeeper"
+              containerElement={<Link to="/gatekeeper" />}
+            >
+            </ListItem>
+          </List>
         </div>
 
       </div>
