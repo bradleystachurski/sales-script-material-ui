@@ -5,8 +5,6 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 import App from './App'
-import Home from './components/Home'
-import About from './components/About'
 import Gatekeeper from './components/Gatekeeper'
 import './index.css'
 
