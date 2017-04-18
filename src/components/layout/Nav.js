@@ -3,9 +3,8 @@ import { Link } from 'react-router'
 import AppBar from 'material-ui/AppBar'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
-import { List, ListItem } from 'material-ui/List'
 
-class MainNavigation extends Component {
+class Nav extends Component {
 
   constructor(props) {
     super(props)
@@ -23,7 +22,7 @@ class MainNavigation extends Component {
           title="Scripts App"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
           onLeftIconButtonTouchTap={this.toggleDrawer}
-          />
+        />
 
         <Drawer
           docked={false}
@@ -40,4 +39,4 @@ class MainNavigation extends Component {
   }
 }
 
-export default MainNavigation
+export default Nav

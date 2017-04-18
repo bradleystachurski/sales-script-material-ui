@@ -5,7 +5,7 @@ import React, {
 import { List, ListItem } from 'material-ui/List'
 import { Link } from 'react-router'
 
-class MainScriptList extends Component {
+class Home extends Component {
   render() {
     return (
       <div style={{ textAlign: 'center' }}>
@@ -32,7 +32,4 @@ class MainScriptList extends Component {
   }
 }
 
-MainScriptList.propTypes = {};
-MainScriptList.defaultProps = {};
-
-export default MainScriptList;
+export default Home;

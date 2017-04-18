@@ -3,12 +3,11 @@ import { Link } from 'react-router'
 import AppBar from 'material-ui/AppBar'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
-import RaisedButton from 'material-ui/RaisedButton'
-import { List, ListItem } from 'material-ui/List'
-import MainNavigation from './components/MainNavigation'
-import MainScriptList from './components/MainScriptList'
+import MainScriptList from './../components/Home'
 
-class App extends Component {
+import Nav from './../components/layout/Nav';
+
+class Layout extends Component {
 
   constructor(props) {
     super(props)
@@ -23,12 +22,12 @@ class App extends Component {
     return (
       <div>
 
-        <MainNavigation />
-        <MainScriptList />
+        <Nav />
+        {this.props.children}
 
       </div>
     )
   }
 }
 
-export default App
+export default Layout
