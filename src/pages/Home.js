@@ -23,7 +23,7 @@ class Home extends Component {
           </ListItem>
           <ListItem
             primaryText="Follow up Call (setting up Adwords Audit)"
-            containerElement={<Link to="/followup" />}
+            containerElement={<Link to="/followup/main" />}
             >
           </ListItem>
         </List>

@@ -30,6 +30,21 @@ import DecisionMaker2a from './components/decisionmaker/DecisionMaker2a'
 import DecisionMaker2ai from './components/decisionmaker/DecisionMaker2ai'
 import DecisionMaker2b from './components/decisionmaker/DecisionMaker2b'
 
+import FollowUp from './pages/FollowUp'
+import FollowUpMain from './components/followup/FollowUpMain'
+import FollowUp1a from './components/followup/FollowUp1a'
+import FollowUp1b from './components/followup/FollowUp1b'
+import FollowUp2a from './components/followup/FollowUp2a'
+import FollowUp2ai from './components/followup/FollowUp2ai'
+import FollowUp2aii from './components/followup/FollowUp2aii'
+import FollowUp2aiii from './components/followup/FollowUp2aiii'
+import FollowUp2aiv from './components/followup/FollowUp2aiv'
+import FollowUp2av from './components/followup/FollowUp2av'
+import FollowUp2b from './components/followup/FollowUp2b'
+import FollowUp3a from './components/followup/FollowUp3a'
+import FollowUp3b from './components/followup/FollowUp3b'
+import FollowUp3c from './components/followup/FollowUp3c'
+
 injectTapEventPlugin()
 
 const Root = () => (
@@ -59,6 +74,21 @@ const Root = () => (
           <Route path="/decisionmaker/2a" component={DecisionMaker2a} />
           <Route path="/decisionmaker/2ai" component={DecisionMaker2ai} />
           <Route path="/decisionmaker/2b" component={DecisionMaker2b} />
+        </Route>
+        <Route path="/followup" component={FollowUp}>
+          <Route path="/followup/main" component={FollowUpMain} />
+          <Route path="/followup/1a" component={FollowUp1a} />
+          <Route path="/followup/1b" component={FollowUp1b} />
+          <Route path="/followup/2a" component={FollowUp2a} />
+          <Route path="/followup/2ai" component={FollowUp2ai} />
+          <Route path="/followup/2aii" component={FollowUp2aii} />
+          <Route path="/followup/2aiii" component={FollowUp2aiii} />
+          <Route path="/followup/2aiv" component={FollowUp2aiv} />
+          <Route path="/followup/2av" component={FollowUp2av} />
+          <Route path="/followup/2b" component={FollowUp2b} />
+          <Route path="/followup/3a" component={FollowUp3a} />
+          <Route path="/followup/3b" component={FollowUp3b} />
+          <Route path="/followup/3c" component={FollowUp3c} />
         </Route>
       </Route>
     </Router>
