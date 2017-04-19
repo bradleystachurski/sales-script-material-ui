@@ -7,15 +7,35 @@ class Gatekeeper1b extends Component {
     return (
       <div>
 
-        <p><strong>You:</strong> It's ________ (your name). Who am I speaking to?</p>
+        <p><strong>You:</strong> Who is this?</p>
 
-        <p><strong>Gatekeeper:</strong> ________ (receptionist name) </p>
+        <p><strong>Gatekeeper:</strong> His assistant.</p>
 
-        <p><strong>You:</strong> Great ________ (receptionist name), when will (owner) be in?</p>
+        <p><strong>You:</strong> What's your name?</p>
 
-        <p><strong>Gatekeeper:</strong> He'll be back on ________.</p>
+        <p><strong>Gatekeeper:</strong> (Gatekeeper's Name)</p>
 
-        <p><strong>You:</strong> (Set up follow up call; if they tell you to follow up in a time frame longer than 1 month: What's the reason this is a good time to reconnect?)</p>
+        <List>
+          <ListItem
+            primaryText={<span><strong>You:</strong> Just tell him it's (your full name), please.</span>}
+            initiallyOpen={false}
+            primaryTogglesNestedList={true}
+            nestedItems={[
+                <ListItem
+                  key={1}
+                  primaryText={<span><strong>Gatekeeper:</strong> (Puts you through to DM)</span>}
+                  containerElement={<Link to="/" />}
+                />,
+                <ListItem
+                  key={2}
+                  primaryText={<span><strong>Gatekeeper: </strong> He says he doesn't know you.</span>}
+                  containerElement={<Link to="/gatekeeper/1bi" />}
+                />
+              ]}
+            >
+          </ListItem>
+        </List>
+
 
       </div>
     )

@@ -10,6 +10,8 @@ import Gatekeeper from './pages/Gatekeeper';
 import GatekeeperMain from './components/gatekeeper/GatekeeperMain';
 import Gatekeeper1a from './components/gatekeeper/Gatekeeper1a';
 import Gatekeeper1b from './components/gatekeeper/Gatekeeper1b';
+import Gatekeeper1bi from './components/gatekeeper/Gatekeeper1bi';
+import Gatekeeper1c from './components/gatekeeper/Gatekeeper1c';
 import './index.css'
 
 injectTapEventPlugin()
@@ -23,6 +25,9 @@ const Root = () => (
           <Route path="/gatekeeper/main" component={GatekeeperMain} />
           <Route path="/gatekeeper/1a" component={Gatekeeper1a} />
           <Route path="/gatekeeper/1b" component={Gatekeeper1b} />
+          <Route path="/gatekeeper/1bi" component={Gatekeeper1bi} />
+          <Route path="/gatekeeper/1bi" component={Gatekeeper1bi} />
+          <Route path="/gatekeeper/1c" component={Gatekeeper1c} />
         </Route>
       </Route>
     </Router>
