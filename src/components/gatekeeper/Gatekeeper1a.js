@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 import { List, ListItem } from 'material-ui/List'
 
-class Gatekeeper extends Component {
+class Gatekeeper1a extends Component {
   render() {
     return (
       <div>
@@ -23,8 +23,13 @@ class Gatekeeper extends Component {
                 >
               </ListItem>
               <ListItem
-                primaryText="May I ask what this call is in reference to?"
+                primaryText="Qualifying Call with Decision Maker"
                 containerElement={<Link to="/qualifying" />}
+                >
+              </ListItem>
+              <ListItem
+                primaryText="Follow up Call (setting up Adwords Audit)"
+                containerElement={<Link to="/followup" />}
                 >
               </ListItem>
             </List>
@@ -42,5 +47,4 @@ class Gatekeeper extends Component {
   }
 }
 
-export default Gatekeeper
-
+export default Gatekeeper1a

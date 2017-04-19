@@ -13,7 +13,7 @@ class Home extends Component {
           <h2>Please select a script to follow</h2>
           <ListItem
             primaryText="Getting Past the Gatekeeper"
-            containerElement={<Link to="/gatekeeper" />}
+            containerElement={<Link to="/gatekeeper/main" />}
             >
           </ListItem>
           <ListItem

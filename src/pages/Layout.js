@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import AppBar from 'material-ui/AppBar'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
-import MainScriptList from './../components/Home'
+import MainScriptList from './Home'
 
 import Nav from './../components/layout/Nav';
 
