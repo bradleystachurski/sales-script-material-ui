@@ -3,3 +3,11 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+
+ul {
+  list-style: none;
+}
+
+ul>li {
+  margin: 1rem 0
+}

@@ -18,7 +18,7 @@ class Home extends Component {
           </ListItem>
           <ListItem
             primaryText="Qualifying Call with Decision Maker"
-            containerElement={<Link to="/qualifying" />}
+            containerElement={<Link to="/decisionmaker/main" />}
             >
           </ListItem>
           <ListItem
