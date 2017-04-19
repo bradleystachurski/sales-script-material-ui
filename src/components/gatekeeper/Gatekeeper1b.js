@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
+import { List, ListItem } from 'material-ui/List'
 
-class Gatekeeper1a extends Component {
+class Gatekeeper1b extends Component {
   render() {
     return (
       <div>
@@ -20,4 +22,4 @@ class Gatekeeper1a extends Component {
   }
 }
 
-export default Gatekeeper1a
+export default Gatekeeper1b
